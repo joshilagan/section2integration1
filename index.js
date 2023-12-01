@@ -175,9 +175,3 @@ backwardBtn.addEventListener('click', () => {
   }
 )
 });   
-
-
-
-
-
-//player logic
