@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div class="hero">
+    <div class="player">
+        <div class="pic">
+            <img class="disc" src="./img/disc.png" alt="" width="188">
+            <img class="taylor" src="./img/taylor.png" alt="" width="200">
+        </div>
+        <audio src="" id="audio"></audio>
+        <div class="player-label">
+            <h3 class="song-name">All Too Well (Taylor's Version)</h3>
+            <p class="artist">Taylor Swift</p>
+        </div>
+
+        <div class="slider">
+            <span class="start-time">00:00</span>
+            <span class="running-time">00:00</span>
+            <input type="range" value="0" class="seek-bar">
+        </div>
+
+        <div class="player-control">
+            <button class="btn back-btn"><img class="backwardz" src="./img/back.png" alt="" width="40" height="38"></button>
+            <button class="play pause">
+                <span></span>
+                <span></span>
+            <button class="btn forward-btn"><img class="forwardz" src="./img/forwrd.png" alt="" width="40" height="38"></button>
+            </button>
+        </div>
+    </div>
+
+    <div class="tab">
+        <p class="explore">Explore</p>
+        <div class="sub-tab">
+            <span id="lyric-tab" class="space current">Lyrics</span>
+            <span class="other-albums space">Other Albums</span>
+            <span class="related Artists space">Related Artists</span>
+        </div>
+        <div class="content">
+            <div id="lyrics">
+                <p>I walked through the door with you</p>
+                <p>The air was cold</p>
+                <p>But something 'bout it felt like home somehow</p>
+                <p>And I, left my scarf there at your sister's house</p>
+                <p>And you've still got it in your drawer even now</p>
+                <br>
+                <p>Oh, your sweet disposition</p>
+                <p>And my wide-eyed gaze</p>
+                <p>We're singing in the car, getting lost upstate</p>
+                <p>Autumn leaves falling down like pieces into place</p>
+                <p>And I can picture it after all these days</p>
+
+                <br>
+                <p>And I know it's long gone and that magic's not here no more</p>
+                <p></p>And I might be okay, but I'm not fine at all</p>
+                <br>
+                <p>'Cause there we are again on that little town street</p>
+                <p>You almost ran the red 'cause you were looking over at me</p>
+                <p>Wind in my hair, I was there</p>
+                <p>I remember it all too well</p>
+                <br>
+                <p>Photo album on the counter</p>
+                <p>Your cheeks were turning red</p>
+                <p>You used to be a little kid with glasses in a twin-sized bed</p>
+                <p>And your mother's telling stories 'bout you on the tee-ball team</p>
+                <p>You told me 'bout your past thinking your future was me</p>
+                <br>
+                <p>And you were tossing me the car keys</p>
+                <p>"F- the patriarchy" keychain on the ground</p>
+                <p>We were always skipping town</p>
+                <p>And I was thinking on the drive down</p>
+                <p>Any time now, he's gonna say it's love</p>
+                <p>ou never called it what it was</p>
+                <br>
+                <p>'Til we were dead and gone and buried</p>
+                <p>Check the pulse and come back swearing it's the same</p>
+                <p>After three months in the grave</p>
+                <p>And then you wondered where it went to as I reached for you</p>
+                <p>But all I felt was shame, and you held my lifeless frame</p>
+                <br>
+                <p>And I know it's long gone, and there was nothing else I could do</p>
+                <p>And I forget about you long enough to forget why I needed to</p>
+                <br>
+                <p>'Cause there we are again in the middle of the night</p>
+                <p>We're dancing 'round the kitchen in the refrigerator light</p>
+                <p>Down the stairs, I was there</p>
+                <p>I remember it all too well</p>
+                <br>
+                <p>And there we are again when nobody had to know</p>
+                <p>You kept me like a secret, but I kept you like an oath</p>
+                <p>Sacred prayer and we'd swear</p>
+                <p>To remember it all too well</p>
+                <br>
+                <p>Well, maybe we got lost in translation</p>
+                <p>Maybe I asked for too much</p>
+                <p>But maybe this thing was a masterpiece 'til you tore it all up</p>
+                <p>Running scared, I was there</p>
+                <p>I remember it all too well</p>
+
+            <!-- And you call me up again just to break me like a promise
+            So casually cruel in the name of being honest
+            I'm a crumpled up piece of paper lying here
+            'Cause I remember it all, all, all
+
+            They say all's well that ends well, but I'm in a new hell
+            Every time you double-cross my mind
+            You said if we had been closer in age, maybe it would have been fine
+            And that made me want to die
+            The idea you had of me, who was she?
+            A never-needy ever, lovely jewel whose shine reflects on you
+
+            Not weeping in a party bathroom
+            Some actress asking me what happened
+            You, that's what happened, you
+            You who charmed my dad with self-effacing jokes
+            Sipping coffee like you're on a late night show
+            But then he watched me watch the front door all night, willing you to come
+            And he said, "It's supposed to be fun turning 21"
+
+            Time won't fly, it's like I'm paralyzed by it
+            I'd like to be my old self again
+            But I'm still trying to find it
+            After plaid shirt days and nights when you made me your own
+            Now you mail back my things, and I walk home alone
+            But you keep my old scarf from that very first week
+            'Cause it reminds you of innocence, and it smells like me
+            You can't get rid of it
+            'Cause you remember it all too well, yeah
+
+            'Cause there we are again when I loved you so
+            Back before you lost the one real thing you've ever known
+            It was rare, I was there, I remember it all too well
+            Wind in my hair, you were there, you remember it all
+            Down the stairs, you were there, you remember it all
+            It was rare, I was there, I remember it all too well
+
+            And I was never good at telling jokes, but the punchline goes
+            "I'll get older, but your lovers stay my age"
+            From when your Brooklyn broke my skin and bones
+            I'm a soldier who's returning half her weight
+
+            And did the twin flame bruise paint you blue?
+            Just between us, did the love affair maim you too?
+            'Cause in this city's barren cold, I still remember the first fall of snow
+            And how it glistened as it fell
+            I remember it all too well
+
+            Just between us, did the love affair maim you all too well?
+            Just between us, do you remember it all too well?
+            Just between us, I remember (just between us) it all too well
+
+            Wind in my hair, I was there, I was there
+            Down the stairs, I was there, I was there
+            Sacred prayer, I was there, I was there
+            It was rare, you remember it all too well
+
+            Wind in my hair, I was there, I was there
+            Down the stairs, I was there, I was there
+            Sacred prayer, I was there, I was there
+            It was rare, you remember it
+
+            Wind in my hair, I was there, I was there
+            Down the stairs, I was there, I was there
+            Sacred prayer, I was there, I was there
+            It was rare, you remember it
+
+            Wind in my hair, I was there, I was there
+            Down the stairs, I was there, I was there
+            Sacred prayer, I was there, I was there
+            It was rare, you remember it -->
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+</div>  
+
+
+    <script src="index.js"></script>
+</body>
+</html>
