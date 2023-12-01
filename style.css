@@ -19,7 +19,7 @@ body {
 
 .player {
     width: 350px;
-    height: 550px;
+    height: 560px;
     border-radius: 25px;
     background: #f4f4f4;
     background: rgba(255, 255, 255, 0.712);
@@ -194,6 +194,7 @@ body {
 }
 .space{
     padding-right: 30px;
+    padding-top: 20px;
 }
 
 .content{
@@ -206,6 +207,7 @@ body {
     font-weight: 900;
 }
 
+
 /*Add transparent fade to top and bottom div*/
 #lyrics{
     -webkit-mask-image: linear-gradient(transparent, black, black, transparent);
@@ -213,7 +215,8 @@ body {
   }
 
 #lyrics {
-     max-height: 400px;     
+     max-height: 400px; 
+     width: 300px;    
      overflow-y: scroll;/* Add the ability to scroll */       
 }
 
@@ -232,4 +235,70 @@ body {
     color: #ffffffb9;
     text-decoration: none; 
     pointer-events: none; /*hide pointer events*/
+}
+/* ========for albums */
+
+/* display flex direction column then rotate to negative 90deg to make it horizontal */
+#other-albums-div{
+    display: flex; 
+    position: relative;
+    top: 0;
+    left: 0;
+    flex-direction: column;   
+    width: 300px;
+    height: 590px;     
+    overflow-y: auto;
+    overflow-x: hidden; 
+    transform:rotate(-90deg)translateY(-310px);; 
+    transform-origin:right top;      
+}
+#other-albums-div > div {
+    width: 260px;
+    height: 250px;
+    padding-right: 15px;      
+}
+/* rotate the children back to original position */
+  #other-albums-div > div {   
+  transform: rotate(90deg)translateY(-30px)translateX(255px);
+  transform-origin: right top;     
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#other-albums-div::-webkit-scrollbar {
+   display: none;
+}    
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#other-albums-div{
+   -ms-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none;  /* Firefox */
+}
+
+/* add transparency fading to the left of the albums */
+#other-albums-div{
+    -webkit-mask-image: linear-gradient(black, black, black,  black, black, black, transparent);
+    mask-image: linear-gradient(black, black, black,  black, black, black, transparent);
+}
+
+#album-card{
+    display: flex;
+    flex-direction: column;  
+    padding: 15px;  
+    font-size: 1rem;
+}
+
+#year{
+    font-style: italic;
+}
+
+#card-pic{   
+    width: 220px;
+    height: 220px;
+    border-radius: 5px;
+    box-shadow: 0 3px 4px 0px rgba(0, 0, 0, 0.342);   
+    filter: brightness(1.35);
+}
+
+.pointer {
+    cursor: pointer;
 }
